@@ -1,7 +1,5 @@
 package Main;
 
-
-
 import DataBase.OrderFunctions;
 import FileHandling.LogDetails;
 
@@ -60,4 +58,5 @@ public class OrderManagement {
             System.out.println("Order failed.");
         }
     }
+
 }

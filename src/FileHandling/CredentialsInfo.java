@@ -7,6 +7,7 @@ import java.util.List;
 public class CredentialsInfo {
 
     public static List<String> credentials = new ArrayList<>();
+
     public static void saveCredentials(String userName, String password){
         File file = new File("Credentials.txt");
         if(!file.exists()){
@@ -25,7 +26,6 @@ public class CredentialsInfo {
         }
     }
 
-
     public static void setCredentials(){
         String filePath = "Credentials.txt"; // Specify the file path and name
 
@@ -41,4 +41,5 @@ public class CredentialsInfo {
             e.printStackTrace();
         }
     }
+
 }

@@ -101,4 +101,5 @@ public class Product {
                 ", updatedAt=" + updatedAt +
                 '}';
     }
+
 }

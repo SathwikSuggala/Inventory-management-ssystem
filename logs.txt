@@ -1,0 +1,41 @@
+2024-10-03 15:20:09 
+User logged in with sathwik user name
+2024-10-03 15:20:19 user name sathwik changed to 
+2024-10-03 15:20:42 
+User logged in with  user name
+2024-10-03 15:20:50 user name  changed to sathwik
+2024-10-03 15:21:13 
+User logged in with sathwik user name
+2024-10-03 15:21:40 created new account with aayushi user name as EMPLOYEE
+2024-10-03 15:22:01 deleted user with user name : aayushi
+2024-10-03 15:35:16 
+User logged in with sathwik user name
+2024-10-03 15:35:41 New customer has been created
+2024-10-03 15:38:39 New order has been placed
+2024-10-04 11:05:08 
+User logged in with sthwik user name
+2024-10-04 11:05:53 user name sthwik changed to sathwik
+2024-10-04 11:22:56 data base initialisation failed. may be credentials were wrong.
+2024-10-04 11:24:05 data base initialisation failed. may be credentials were wrong.
+2024-10-06 19:34:04 data base initialisation failed. may be credentials were wrong.
+2024-10-06 19:36:02 data base initialisation failed. may be credentials were wrong.
+2024-10-06 19:37:45 
+User logged in with sathwik user name
+2024-10-06 19:46:59 
+User logged in with sathwik user name
+2024-10-09 11:25:08 
+User logged in with sathwik user name
+2024-10-09 11:25:29 created new account with aayushi user name as EMPLOYEE
+2024-10-09 11:25:49 
+User logged in with aayushi user name
+2024-10-11 11:11:51 
+User logged in with sathwik user name
+2024-10-11 11:15:03 
+User logged in with sathwik user name
+2024-10-11 11:16:37 
+User logged in with sathwik user name
+2024-10-11 11:16:55 created new account with aayushi user name as EMPLOYEE
+2024-10-11 11:22:02 
+User logged in with sathwik user name
+2024-10-11 14:36:51 
+User logged in with sathwik user name

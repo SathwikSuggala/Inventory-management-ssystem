@@ -62,6 +62,7 @@ public class InventoryManagement {
                     } catch (SQLException e) {
                         LogDetails.log("Could not fetch products from data base, Something went wrong");
                     }
+                    break;
                 default:
                     System.out.println("Enter an option from menu only");
             }

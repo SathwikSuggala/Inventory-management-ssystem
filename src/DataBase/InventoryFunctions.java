@@ -340,4 +340,37 @@ public class InventoryFunctions {
 
     }
 
+    public static List<Product> fetchProductsFromDB() throws SQLException {
+
+        connect();
+
+        List<Product> productList = new ArrayList<>();
+        String query = "SELECT product_id, name, category, price, quantity, reorder_threshold, created_at, updated_at FROM products WHERE is_deleted = '0'";
+
+        try (
+             PreparedStatement pstmt = con.prepareStatement(query);
+             ResultSet rs = pstmt.executeQuery()) {
+
+            // Iterate through the result set and create Product objects
+            while (rs.next()) {
+                int productId = rs.getInt("product_id");
+                String name = rs.getString("name");
+                String category = rs.getString("category");
+                double price = rs.getDouble("price");
+                int quantity = rs.getInt("quantity");
+                int reorderThreshold = rs.getInt("reorder_threshold");
+                java.sql.Timestamp createdAt = rs.getTimestamp("created_at");
+                java.sql.Timestamp updatedAt = rs.getTimestamp("updated_at");
+
+                // Create a Product object and add it to the list
+                Product product = new Product(productId, name, category, price, quantity, reorderThreshold, createdAt, updatedAt);
+                productList.add(product);
+            }
+
+        } catch (SQLException e) {
+            throw new SQLException();
+        }
+
+        return productList;
+    }
 }

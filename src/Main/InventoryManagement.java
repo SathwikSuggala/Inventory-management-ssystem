@@ -4,8 +4,12 @@ import DataBase.InventoryFunctions;
 import FileHandling.LogDetails;
 
 import java.sql.SQLException;
+import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Stream;
+
+import static DataBase.InventoryFunctions.fetchProductsFromDB;
+import static FileHandling.ProductsInfo.writeProductsToFile;
 
 public class InventoryManagement {
 
@@ -21,6 +25,7 @@ public class InventoryManagement {
             System.out.println("3.Delete product");
             System.out.println("4.View products");
             System.out.println("5.Add quantity to existing products");
+            System.out.println("6.Create file with all the products");
 
             try {
                 menuOption = sc.nextInt();
@@ -50,6 +55,13 @@ public class InventoryManagement {
                 case 5:
                     addQuantityToProducts();
                     break;
+                case 6:
+                    try {
+                        List<Product> products = fetchProductsFromDB();
+                        writeProductsToFile(products);
+                    } catch (SQLException e) {
+                        LogDetails.log("Could not fetch products from data base, Something went wrong");
+                    }
                 default:
                     System.out.println("Enter an option from menu only");
             }

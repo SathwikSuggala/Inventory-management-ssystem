@@ -39,3 +39,8 @@ User logged in with sathwik user name
 User logged in with sathwik user name
 2024-10-11 14:36:51 
 User logged in with sathwik user name
+2024-10-13 12:04:06 
+User logged in with sathwik user name
+2024-10-13 12:04:56 
+User logged in with sathwik user name
+2024-10-13 12:05:51 New product has been added into the data base with product name mobile, and category as electronics
